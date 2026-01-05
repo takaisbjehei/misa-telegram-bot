@@ -16,7 +16,7 @@ bot.on("message", async (msg) => {
         "Authorization": `Bearer ${process.env.GROQ_API_KEY}`
       },
       body: JSON.stringify({
-        model: "llama3-70b-8192",
+        model: "openai/gpt-oss-120b",
         messages: [{ role: "user", content: text }]
       })
     });
